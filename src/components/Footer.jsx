@@ -6,14 +6,22 @@ const Footer = () => {
   return (
     <footer className="total-footer">
       <nav className="down-nav">
-        <img className="logo-perfil" height="60" width="60" src={Foto} alt="rudy" />
+        <img
+          className="logo-perfil"
+          height="60"
+          width="60"
+          src={Foto}
+          alt="rudy"
+        />
         <div>
           <ul className="menu">
             <li>
-              <a href="#github">GitHub</a>
+              <a href="https://github.com/Rudihmar">GitHub</a>
             </li>
             <li>
-              <a href="#linkedin">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/rudihmar-suarez/">
+                LinkedIn
+              </a>
             </li>
             <li>
               <a href="#contacto">Contacto</a>

@@ -1,4 +1,4 @@
-import React, { Fragment,  useState } from "react";
+import React, { Fragment, useState } from "react";
 import Logo from "../img/logo_bicevida.png";
 import Gat from "../img/gat.png";
 import axios from "axios";
@@ -10,7 +10,7 @@ const options = [
 ];
 
 const Init = () => {
-  const [insuraceData, setInsuraceData] = useState(null);
+  const [insuranceData, setinsuranceData] = useState(null);
   const [selectedInsurance, setSelectedInsurance] = useState(null);
 
   const getData = () => {
@@ -19,21 +19,20 @@ const Init = () => {
         `https://dn8mlk7hdujby.cloudfront.net/interview/insurance/${selectedInsurance}`
       )
       .then((response) => {
-        console.log(response.data)
-        
+        setinsuranceData(response.data);
       });
   };
+
   return (
     <Fragment>
       <div className="logo-bice">
         <img width="150" src={Logo} alt="bice" />
       </div>
+      <p className="message">Conoce nuestros Seguros</p>
       <div className="menu-insurance">
-        
         <select
           onChange={(e) => {
             setSelectedInsurance(e.target.value);
-            console.log(e.target.value);
           }}
           name="insurances"
           className="selector"
@@ -49,11 +48,17 @@ const Init = () => {
             )),
           ]}
         </select>
-        <button className="button-selector" disabled={!selectedInsurance} onClick={getData}>Buscar</button>
+        <button
+          className="button-selector"
+          disabled={!selectedInsurance}
+          onClick={getData}
+        >
+          Buscar
+        </button>
       </div>
-      <div className="gat">
-      <img src={Gat} alt="gat" />
-    <TemplateInfo />
+      <div className="container">
+        <img className="gat" src={Gat} alt="gat" />
+        {insuranceData && <TemplateInfo insuranceData={insuranceData} />}
       </div>
     </Fragment>
   );

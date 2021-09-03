@@ -1,23 +1,19 @@
-import React from 'react';
+import React from "react";
 
-const TemplateInfo = () => {
+const TemplateInfo = (props) => {
+  const { insuranceData } = props;
+  const { name, description, price, image } = insuranceData.insurance;
+
   return (
     <div>
-
-    
       <div className="template">
-
-          <div className="titulo"><p>NOMBRE</p></div>
-          <div className="parrafo"><p>DESCRIPCION</p></div>
-          <div className="imagen"><p>IMAGEN</p></div>
-          <div className="label"><p>LABEL</p></div>
-
+        <div className="image">
+          <img src={image} alt="img" />
+        </div>
+        <div className="price">{price}</div>
+        <div className="name">{name}</div>
+        <div className="description">{description}</div>
       </div>
-
-
-
-
-
     </div>
   );
 };
