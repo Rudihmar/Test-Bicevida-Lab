@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment,  useState } from "react";
 import Logo from "../img/logo_bicevida.png";
 import Gat from "../img/gat.png";
 import axios from "axios";
@@ -12,11 +12,6 @@ const options = [
 const Init = () => {
   const [insuraceData, setInsuraceData] = useState(null);
   const [selectedInsurance, setSelectedInsurance] = useState(null);
-  const [error, setError] = useState(false);
-
-  useEffect(() => {
-    if (error) setTimeout(() => setError(false), 3000);
-  }, [error]);
 
   const getData = () => {
     axios
@@ -24,14 +19,8 @@ const Init = () => {
         `https://dn8mlk7hdujby.cloudfront.net/interview/insurance/${selectedInsurance}`
       )
       .then((response) => {
-        console.log(response.data);
-        if (!response.data.insurance) setError(true);
-        else setInsuraceData(response.data.insurance);
-      })
-
-      .catch((error) => {
-        setError(true);
-        console.log(error);
+        console.log(response.data)
+        
       });
   };
   return (
@@ -66,7 +55,6 @@ const Init = () => {
       <img src={Gat} alt="gat" />
     <TemplateInfo />
       </div>
-      {error && "Ha ocurrido un error al buscar información del seguro"}
     </Fragment>
   );
 };
