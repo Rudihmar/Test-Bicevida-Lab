@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Test-Bicevida-Lab/static/css/main.831da324.chunk.css",
+    "main.js": "/Test-Bicevida-Lab/static/js/main.d91bd36b.chunk.js",
+    "main.js.map": "/Test-Bicevida-Lab/static/js/main.d91bd36b.chunk.js.map",
+    "runtime-main.js": "/Test-Bicevida-Lab/static/js/runtime-main.3d392e05.js",
+    "runtime-main.js.map": "/Test-Bicevida-Lab/static/js/runtime-main.3d392e05.js.map",
+    "static/js/2.5977867a.chunk.js": "/Test-Bicevida-Lab/static/js/2.5977867a.chunk.js",
+    "static/js/2.5977867a.chunk.js.map": "/Test-Bicevida-Lab/static/js/2.5977867a.chunk.js.map",
+    "index.html": "/Test-Bicevida-Lab/index.html",
+    "static/css/main.831da324.chunk.css.map": "/Test-Bicevida-Lab/static/css/main.831da324.chunk.css.map",
+    "static/js/2.5977867a.chunk.js.LICENSE.txt": "/Test-Bicevida-Lab/static/js/2.5977867a.chunk.js.LICENSE.txt",
+    "static/media/foto-rudy.8ca3dd7c.jpg": "/Test-Bicevida-Lab/static/media/foto-rudy.8ca3dd7c.jpg",
+    "static/media/gat.d8282dbe.png": "/Test-Bicevida-Lab/static/media/gat.d8282dbe.png",
+    "static/media/name-rudy.39791db5.png": "/Test-Bicevida-Lab/static/media/name-rudy.39791db5.png",
+    "static/media/not_found.89f23b97.gif": "/Test-Bicevida-Lab/static/media/not_found.89f23b97.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3d392e05.js",
+    "static/js/2.5977867a.chunk.js",
+    "static/css/main.831da324.chunk.css",
+    "static/js/main.d91bd36b.chunk.js"
+  ]
+}
